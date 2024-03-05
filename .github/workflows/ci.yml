@@ -1,0 +1,25 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Start Docker Compose
+        run: docker-compose up -d
+
+      - name: Display associated web page
+        run: |
+          sleep 10  # Temps d'attente pour s'assurer que les conteneurs sont prêts
+          curl http://localhost:80  # Remplacez l'URL par celle de votre application
+
+      - name: Stop Docker Compose
+        run: docker-compose down

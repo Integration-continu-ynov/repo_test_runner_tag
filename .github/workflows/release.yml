@@ -2,7 +2,8 @@ name: Release Workflow
 
 on:
   push:
-
+    tags:
+      - oui*
 jobs:
   monbuild:
     runs-on: linux

@@ -16,4 +16,4 @@ jobs:
 
       # Ajoutez ici les étapes supplémentaires de votre workflow
       - name: Indiquer que la pipeline est passée
-        run: echo "La pipeline est passée avec succès!"
+        run: echo "La pipeline est passée avec succès oh ouiii"

@@ -5,7 +5,7 @@ on:
     tags:
       - oui*
 jobs:
-  monbuild:
+  build:
     runs-on: linux
 
     steps:

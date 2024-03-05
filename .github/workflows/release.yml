@@ -4,11 +4,9 @@ on:
   push:
     tags:
       - oui*
-
 jobs:
   build:
     runs-on: linux
-    if: github.ref == 'refs/heads/main'
 
     steps:
       - name: Checkout repository

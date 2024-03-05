@@ -2,11 +2,9 @@ name: Release Workflow
 
 on:
   push:
-    tags:
-      - oui*
 
 jobs:
-  build:
+  monbuild:
     runs-on: linux
 
     steps:

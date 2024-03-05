@@ -15,3 +15,5 @@ jobs:
         uses: actions/checkout@v2
 
       # Ajoutez ici les étapes supplémentaires de votre workflow
+      - name: Indiquer que la pipeline est passée
+        run: echo "La pipeline est passée avec succès!"
